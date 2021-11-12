@@ -1,23 +1,22 @@
-
 Conduit Project
 
 ❏ Sign Up
 ↳ Sign Up with invalid email
-  POST http://localhost:1667/users [422 Unprocessable Entity, 141B, 114ms]
+  POST http://localhost:1667/users [422 Unprocessable Entity, 141B, 209ms]
   ✓  Status code is 422
   ✓  Responce contain 'errors' property
   ✓  Errors has 'email' property with validation message
   ✓  Response time is less than 800ms
 
 ↳ Sign Up with invalid password
-  POST http://localhost:1667/users [422 Unprocessable Entity, 214B, 22ms]
+  POST http://localhost:1667/users [422 Unprocessable Entity, 214B, 29ms]
   ✓  Status code is 422
   ✓  Responce contain 'errors' property
   ✓  Errors has 'email' or 'password' property with validation message
   ✓  Response time is less than 800ms
 
 ↳ Password is less than 8 characters
-  POST http://localhost:1667/users [422 Unprocessable Entity, 214B, 25ms]
+  POST http://localhost:1667/users [422 Unprocessable Entity, 214B, 57ms]
   ✓  Status code is 422
   ✓  Responce contain 'errors' property
   ✓  Errors has 'email' or 'password' property with validation message
@@ -31,246 +30,255 @@ Conduit Project
   ✓  Response time is less than 800ms
 
 ↳ Sign Up with blank Password field
-  POST http://localhost:1667/users [422 Unprocessable Entity, 137B, 12ms]
+  POST http://localhost:1667/users [422 Unprocessable Entity, 137B, 18ms]
   ✓  Status code is 422
   ✓  Responce contain 'errors' property
   ✓  Errors has 'email' or 'password' property with validation message
   ✓  Response time is less than 800ms
 
 ↳ Sign Up with blank Username field
-  POST http://localhost:1667/users [422 Unprocessable Entity, 137B, 9ms]
+  POST http://localhost:1667/users [422 Unprocessable Entity, 137B, 27ms]
   ✓  Status code is 422
   ✓  Responce contain 'errors' property
   ✓  Errors has 'email' or 'password' property with validation message
   ✓  Response time is less than 800ms
 
 ↳ Sign Up with existing email
-  POST http://localhost:1667/users [422 Unprocessable Entity, 133B, 18ms]
+  POST http://localhost:1667/users [422 Unprocessable Entity, 133B, 53ms]
   ✓  Status code is 422
   ✓  Responce contain 'errors' property
   ✓  Errors has 'email' property with validation message
   ✓  Response time is less than 800ms
 
 ↳ Sign Up
-  POST http://localhost:1667/users [200 OK, 354B, 638ms]
+  POST http://localhost:1667/users [200 OK, 371B, 1755ms]
   ✓  Status code is 200
-  ✓  Response time is less than 1000ms
+  1. Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
   ✓  Test data type of the response
 
 ❏ Article
 ↳ Create article with blank 'Title' field
-  POST http://localhost:1667/users [200 OK, 366B, 578ms]
+  POST http://localhost:1667/users [200 OK, 356B, 1755ms]
   ┌
   │ {
   │   user: {
-  │     id: 2975,
-  │     username: 'Everardo.Aufderhar84',
-  │     email: 'Blaze11@gmail.com',
+  │     id: 3003,
+  │     username: 'Sabina19',
+  │     email: 'Brody34@hotmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$wL.TcLrkq8Lmb/IZHuGo0.GBqYSum6xDqw4fGvNQ3sFXaVmpD9taO|::|$2a$10$xIvmTMX57s7.8iuorUCJKeXak0RC7m
-  │ 86U6arIPqw8Yb.0zsclb4N6'
+  │     token: '$2a$10$/x6HegstMLSUVAs.1jI9ye7TRtBuRFjemRCZrpBM7R0XEQD9Zqcnm|::|$2a$10$1e7VbQ8ctH
+  │ UZn/pVBW3TfOJ/zU2DazxZDPRvW.muTQ7o/9suLRykG'
   │   }
   │ }
   └
-  POST http://localhost:1667/articles [400 Bad Request, 135B, 8ms]
+  POST http://localhost:1667/articles [400 Bad Request, 135B, 29ms]
   ✓  Status code is 400
   ✓  Responce contain 'errors' property
   ✓  Errors has 'title' property with validation message
   ✓  Response time is less than 800ms
 
 ↳ Create Article
-  POST http://localhost:1667/users [200 OK, 370B, 568ms]
+  POST http://localhost:1667/users [200 OK, 362B, 1751ms]
   ┌
   │ {
   │   user: {
-  │     id: 2976,
-  │     username: 'Stephany.Halvorson',
-  │     email: 'Edmond_Zulauf@yahoo.com',
+  │     id: 3004,
+  │     username: 'Mohammed.Crooks',
+  │     email: 'Virgil80@yahoo.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$.vQgL45qjBdmqOgbjni42Oe8kDlErC2bkKUOjS26kqHG6VIdHng9G|::|$2a$10$jolnOtm9Vn3QqnW1QLeQQ.GJ8JRqTU
-  │ m/FRAQai9X50cL1MPgMftQG'
+  │     token: '$2a$10$Uyug/gwYcRFzbGpLl2qD.eacOUnqajEYz7vtTbVKHNrNXnBjrJwK.|::|$2a$10$rEH7/.VeuE
+  │ NrPOh3uhcRkuetn0XyshMA4DP0q/XWUHP0xOyMTKrGG'
   │   }
   │ }
   └
-  POST http://localhost:1667/articles [200 OK, 536B, 35ms]
+  POST http://localhost:1667/articles [200 OK, 577B, 122ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
 
 ↳ Add Comment
-  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 509B, 62ms]
+  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 434B, 144ms]
   ┌
   │ {
   │   article: {
   │     id: -1,
-  │     author_id: 2976,
-  │     title: 'sed saepe hic',
-  │     description: 'perspiciatis qui odio',
+  │     author_id: 3004,
+  │     title: 'quo porro atque',
+  │     description: 'qui sunt suscipit',
   │     favorited: false,
   │     favoritesCount: 0,
-  │     body: 'Dignissimos qui ut in sequi delectus similique perspiciatis. Omnis in qui accusamus perspiciatis quis 
-  │ perspiciatis et nesciunt. Consectetur alias est. Voluptatem quo eligendi omnis sint et. Nam qui quas.',
+  │     body: 'Ut deleniti error similique velit. Accusantium consequatur eum nihil nulla. Dolore
+  │  aut facilis voluptatibus eligendi ut maiores.',
   │     tags: [],
-  │     slug: 'sed-saepe-hic',
-  │     created_at: 1636658825606,
-  │     updated_at: 1636658825606
+  │     slug: 'quo-porro-atque',
+  │     created_at: 1636709435739,
+  │     updated_at: 1636709435739
   │   }
   │ }
   └
-[200 OK, 363B, 585ms]
+[200 OK, 366B, 1612ms]
   ┌
   │ {
   │   user: {
-  │     id: 2977,
-  │     username: 'Darren52',
-  │     email: 'Rosemary.Stamm76@gmail.com',
+  │     id: 3005,
+  │     username: 'Cierra.MacGyver',
+  │     email: 'Juliana.Howe@gmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$73BwRdHXYWhvDM7cCjF59uqEcFc2zhd82v1GXvrR9yyr3QCsHphB.|::|$2a$10$5THY48DysySeeleg6OFgG.tLZCa0vx
-  │ 4Ll4DKsuztDiWVkr1aCuSei'
+  │     token: '$2a$10$CGfZMoI7QlNHK1iwiZp9pOQy8XpuwjZCW2BtMbBuSkzQgHbuEpR/C|::|$2a$10$HDI7OnXnSa
+  │ Mwn24NmJYWo.8v.xjqmdC9BPNxuvbQLfuAqgsHTkN8O'
   │   }
   │ }
   └
-  POST http://localhost:1667/articles/sed-saepe-hic/comments [200 OK, 338B, 68ms]
+  POST http://localhost:1667/articles/quo-porro-atque/comments [200 OK, 331B, 161ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
-  DELETE http://localhost:1667/articles/undefined/comments [403 Forbidden, 141B, 8ms]
+  DELETE http://localhost:1667/articles/undefined/comments [403 Forbidden, 141B, 63ms]
   ┌
   │ { errors: { body: [ 'You are unauthorised to do this action.' ] } }
   └
 
 ↳ Delete Comment
-  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 522B, 58ms]
+  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 521B, 144ms]
   ┌
   │ {
   │   article: {
   │     id: -1,
-  │     author_id: 2977,
-  │     title: 'perferendis dignissimos est',
-  │     description: 'corporis voluptatem quas',
+  │     author_id: 3005,
+  │     title: 'officiis id quasi',
+  │     description: 'architecto ad magnam',
   │     favorited: false,
   │     favoritesCount: 0,
-  │     body: 'Error unde omnis. Est dolor in. Enim facere officiis quae sit soluta illo. Illum qui modi qui alias qu
-  │ i. Unde hic debitis molestiae. Molestiae dolores unde laboriosam error est quaerat.',
+  │     body: 'Tempora dolor ipsam similique non odit sed quaerat deserunt. Et error vel corporis
+  │  quasi. Quasi ut dolore amet doloribus similique veniam fuga quo. Deleniti sunt et nostrum qui. Dicta adipis
+  │ ci id velit nihil.',
   │     tags: [],
-  │     slug: 'perferendis-dignissimos-est',
-  │     created_at: 1636658826308,
-  │     updated_at: 1636658826308
+  │     slug: 'officiis-id-quasi',
+  │     created_at: 1636709437791,
+  │     updated_at: 1636709437791
   │   }
   │ }
   └
-[200 OK, 368B, 594ms]
+[200 OK, 362B, 1783ms]
   ┌
   │ {
   │   user: {
-  │     id: 2978,
-  │     username: 'Marianna.Bogan',
-  │     email: 'Linnie.Gibson@hotmail.com',
+  │     id: 3006,
+  │     username: 'Mellie41',
+  │     email: 'Fern.Grimes62@hotmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$gBKGVYA7MOYERfwv/g3fGuQA7L82mkNlJFksPRUvyU7GHjHKKcvuO|::|$2a$10$v/JDgykXHMe6Y.rS14sDG.RRfeBKzH
-  │ WyrKQiQV2GHgErAYRMPFvuG'
+  │     token: '$2a$10$AefcoEragASzFYc3JjgDiuhHSB/j5T.zJfCiDDfx0dFE.dU3oda7W|::|$2a$10$JWKfZigXoy
+  │ UEpIX7HI6u1uXMNZiucaYpINjHZlK2KMsn/XWeuGF7G'
   │   }
   │ }
   └
-  DELETE http://localhost:1667/articles/comment/231 [200 OK, 119B, 44ms]
+  DELETE http://localhost:1667/articles/comment/234 [200 OK, 119B, 189ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
 
 ↳ Delete Article
-  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 482B, 53ms]
+  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 512B, 136ms]
   ┌
   │ {
   │   article: {
   │     id: -1,
-  │     author_id: 2978,
-  │     title: 'blanditiis impedit voluptatem',
-  │     description: 'voluptas eos voluptate',
+  │     author_id: 3006,
+  │     title: 'adipisci nemo quod',
+  │     description: 'illum quis tempore',
   │     favorited: false,
   │     favoritesCount: 0,
-  │     body: 'Animi corporis nobis vel tempora modi dolores eveniet rerum. Adipisci est in temporibus. Mollitia fuga
-  │  ut dignissimos. Omnis impedit veniam et.',
+  │     body: 'Aspernatur alias molestiae corrupti. Deserunt voluptatibus veritatis sunt quos vol
+  │ uptas id et. Magni error dolores perspiciatis sit accusamus. Rem nobis tempora. Ducimus et non porro eos sed
+  │  ea ipsa.',
   │     tags: [],
-  │     slug: 'blanditiis-impedit-voluptatem',
-  │     created_at: 1636658826999,
-  │     updated_at: 1636658826999
+  │     slug: 'adipisci-nemo-quod',
+  │     created_at: 1636709439888,
+  │     updated_at: 1636709439888
   │   }
   │ }
   └
-[200 OK, 370B, 594ms]
+[200 OK, 359B, 1092ms]
   ┌
   │ {
   │   user: {
-  │     id: 2979,
-  │     username: 'Johann_Barton87',
-  │     email: 'Carmella_Keeling@gmail.com',
+  │     id: 3007,
+  │     username: 'Faye.White',
+  │     email: 'Marjorie78@gmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$nxzwu.HhLVsP7cYGyXH6n.AzP0cvYLNMW0ay2.ubg.UbwNjyqO35S|::|$2a$10$pu9rHpC1TlQ.erLn8H.ZCeE6q4Yf9Z
-  │ h8tTOon7UrL2x.MdHKkHkti'
+  │     token: '$2a$10$y4FmxG8C6Mb6q5YMFnKshelOuc2jcMYcb.jbI8EwqQ0ZazyyrEXSC|::|$2a$10$e5kExBLe61
+  │ 33JoeT9xp/DeUlQqQmzdkbTVS2tHYMBwA1mSGQXK1my'
   │   }
   │ }
   └
-  DELETE http://localhost:1667/articles/blanditiis-impedit-voluptatem [200 OK, 87B, 30ms]
+  DELETE http://localhost:1667/articles/adipisci-nemo-quod [200 OK, 87B, 55ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
 
 ↳ Edit Article
-  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 490B, 55ms]
+  POST http://localhost:1667/users   POST http://localhost:1667/articles [200 OK, 439B, 225ms]
   ┌
   │ {
   │   article: {
   │     id: -1,
-  │     author_id: 2979,
-  │     title: 'similique ut numquam',
-  │     description: 'eveniet alias ut',
+  │     author_id: 3007,
+  │     title: 'officiis est sunt',
+  │     description: 'debitis et minima',
   │     favorited: false,
   │     favoritesCount: 0,
-  │     body: 'Consequatur corrupti repellendus earum dicta magnam est. Quam eos delectus et quia reiciendis minus pl
-  │ aceat. Ea quo aut beatae doloremque reprehenderit quis laboriosam et qui.',
+  │     body: 'Ipsum similique autem maxime cum autem ut tempore in. Fugit sapiente voluptatem ac
+  │ cusantium eum placeat illum. Aperiam nihil aut.',
   │     tags: [],
-  │     slug: 'similique-ut-numquam',
-  │     created_at: 1636658827681,
-  │     updated_at: 1636658827681
+  │     slug: 'officiis-est-sunt',
+  │     created_at: 1636709441105,
+  │     updated_at: 1636709441105
   │   }
   │ }
   └
-[200 OK, 366B, 587ms]
+[200 OK, 366B, 902ms]
   ┌
   │ {
   │   user: {
-  │     id: 2980,
-  │     username: 'Makayla.Hane',
-  │     email: 'Lizzie_Parisian@gmail.com',
+  │     id: 3008,
+  │     username: 'Rashawn.Stamm',
+  │     email: 'Reece_Senger99@gmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$wi2UtYezAbl8PR/oLnmn9u6EKegHB9v4hjPx9q6jORysjhojasP0u|::|$2a$10$Yvb3eDsOq.eza9XpyQ9DwunN1Ao5kP
-  │ qJtQF9XX6WoHorscXkGkPNq'
+  │     token: '$2a$10$2bdh.Pzw8wmzfranSkMF.uRG2k4zGLR6jxDakxqWgwJP074XtNzNa|::|$2a$10$VBa6TgP5cB
+  │ yhgx9JgQoqke3rzt.GbZVAFDDWWtbu8xywXRSAKnNNy'
   │   }
   │ }
   └
-  PUT http://localhost:1667/articles [200 OK, 604B, 45ms]
+  PUT http://localhost:1667/articles [200 OK, 486B, 63ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
-  DELETE http://localhost:1667/articles/similique-ut-numquam [200 OK, 87B, 30ms]
+  DELETE http://localhost:1667/articles/officiis-est-sunt [200 OK, 87B, 58ms]
   ┌
   │ { success: true }
   └
 
 ❏ Log In
+↳ Non-existing user Log In
+  POST http://localhost:1667/users/login [422 Unprocessable Entity, 138B, 37ms]
+  ✓  Status code is 422
+  ✓  Responce contain 'errors' property
+  ✓  Errors has 'email' or 'password' property with validation message
+  ✓  Response time is less than 800ms
+
 ↳ Log In
-  POST http://localhost:1667/users/login [200 OK, 606B, 580ms]
+  POST http://localhost:1667/users/login [200 OK, 566B, 837ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
@@ -278,153 +286,136 @@ Conduit Project
   ✓  Test email data
   ✓  User id is valid
 
-↳ Non-existing user Log In
-  POST http://localhost:1667/users/login [422 Unprocessable Entity, 138B, 17ms]
-  ✓  Status code is 422
-  ✓  Responce contain 'errors' property
-  ✓  Errors has 'email' or 'password' property with validation message
-  ✓  Response time is less than 800ms
-
 ❏ Profile
 ↳ Profile
-  POST http://localhost:1667/users [200 OK, 357B, 589ms]
+  POST http://localhost:1667/users [200 OK, 361B, 883ms]
   ┌
   │ {
   │   user: {
-  │     id: 2981,
-  │     username: 'Kaci71',
-  │     email: 'Margot_Braun@yahoo.com',
+  │     id: 3009,
+  │     username: 'Bridget15',
+  │     email: 'Sidney_Brakus@gmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$4W1fTXFHG2.KG9PmMMl7d.5kwz2DnLBI09ejPqr7fWqH.7k62ndFu|::|$2a$10$WhQrFGFdykMJt/O/eL6MuesLw4sFfZ
-  │ 2l/UwCuWFQ4smzfhBv1pPIK'
+  │     token: '$2a$10$oQYLj0iB6DlcRP2wlR.tReztICPzE49BqsdS55o6GIUSo2J10xBXm|::|$2a$10$GQE/h/s9Jb
+  │ 5DyOcZjla5iOzpDVbeO8pdjARWt9vXHybpWDVkC0n/q'
   │   }
   │ }
   └
-  GET http://localhost:1667/profiles/Nilo [200 OK, 487B, 21ms]
+  GET http://localhost:1667/profiles/Nilo [200 OK, 447B, 38ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
 
 ↳ Edit Profile
-  POST http://localhost:1667/users [200 OK, 356B, 579ms]
+  POST http://localhost:1667/users [200 OK, 364B, 799ms]
   ┌
   │ {
   │   user: {
-  │     id: 2982,
-  │     username: 'Donato99',
-  │     email: 'Wendell86@gmail.com',
+  │     id: 3010,
+  │     username: 'Miller18',
+  │     email: 'Giovanna_Kemmer39@yahoo.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$StFBjnjzvfIXfT6CwuIkLethKAcmm0Y/KcmhSVkcIbRSWV8q.eORe|::|$2a$10$4eI4gDZQmtNWq.tB.ugplurwEtAqYh
-  │ 3a8ALPwjHKMLhf9oUgQZdUy'
+  │     token: '$2a$10$uafP9xoFpIa0mI3xDOAd7uZbIfs/.A/3oaEbfIIDPx8SOfixOYylK|::|$2a$10$IlEWFcwDPY
+  │ zW4AefqXb4runmZ7xgzcQgsOBCzLUMofpDqYtb1a4ey'
   │   }
   │ }
   └
-  POST http://localhost:1667/user [422 Unprocessable Entity, 154B, 60ms]
-  1. Status code is 200
+  POST http://localhost:1667/user [200 OK, 506B, 74ms]
+  ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
-  2. Test all response keys
-  3. Test email data
+  ✓  Test all response keys
+  ✓  Test email data
 
 ❏ Your Feed
 ↳ Your Feed
-  POST http://localhost:1667/users [200 OK, 368B, 582ms]
+  POST http://localhost:1667/users [200 OK, 360B, 814ms]
   ┌
   │ {
   │   user: {
-  │     id: 2983,
-  │     username: 'Zechariah_Collier',
-  │     email: 'Anya_Purdy@hotmail.com',
+  │     id: 3011,
+  │     username: 'Olin.Rath94',
+  │     email: 'Milan_Will@yahoo.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$JqXrUDfEdcmTTGzy3D7yt.kbUOEhsEfHEJd0EZMDM5T32ifgxycI6|::|$2a$10$4l3Qfu4bbngtToLo4IalXOxl4rUaP4
-  │ .r/aYM5zIvh0hZYo57SMVbG'
+  │     token: '$2a$10$MzmuXOzAbZ1CfM6zaRwuFOFos.HzdLzmkE0ZnVUL1b/wbSfGfcp.W|::|$2a$10$M2LUEiKQj6
+  │ SmgI3V14e7D.fIQ1QUoAuANed2TxxdJRbbOgrVZPnge'
   │   }
   │ }
   └
-  GET http://localhost:1667/articles?user_id=2983 [200 OK, 394.48kB, 194ms]
+  GET http://localhost:1667/articles?user_id=3011 [200 OK, 400.24kB, 354ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
 
 ↳ Add to Favorite (like)
-  POST http://localhost:1667/users [200 OK, 367B, 569ms]
+  POST http://localhost:1667/users [200 OK, 372B, 935ms]
   ┌
   │ {
   │   user: {
-  │     id: 2984,
-  │     username: 'Mabelle.Gaylord',
-  │     email: 'Tyson_Goldner@gmail.com',
+  │     id: 3012,
+  │     username: 'Audreanne_Bode',
+  │     email: 'Marina_Balistreri62@gmail.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$/.JxhTlJdiCylF9ENZUFkeKq5jsllTsC6.awQmlU1BbC81SiTlRt.|::|$2a$10$IgqhNlgYQ1weU5dS.LGSsun/tcPhEA
-  │ zPD.bypABy678Uw4TWBYcua'
+  │     token: '$2a$10$W9KcT26Ppmw3bAJOKv/Vg.B4RgxsdDLw6bpXScP9DFbMOt2ni1X66|::|$2a$10$uYwd0QmICJ
+  │ 2ng3ry9ALKGu2.3RDXcJ38/obmmiBqYBoLiLDa1fcwG'
   │   }
   │ }
   └
-  POST http://localhost:1667/articles/reprehenderit-pariat/favorite [200 OK, 468B, 90ms]
+  POST http://localhost:1667/articles/reprehenderit-pariat/favorite [200 OK, 468B, 177ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
   ✓  Test all response keys
 
 ↳ Remove from Favorite (unlike)
-  POST http://localhost:1667/users [200 OK, 369B, 578ms]
+  POST http://localhost:1667/users [200 OK, 362B, 907ms]
   ┌
   │ {
   │   user: {
-  │     id: 2985,
-  │     username: 'Christopher_Rogahn58',
-  │     email: 'Heloise4@hotmail.com',
+  │     id: 3013,
+  │     username: 'Francisca40',
+  │     email: 'Roma.Wiegand@yahoo.com',
   │     bio: '',
   │     image: 'https://static.productionready.io/images/smiley-cyrus.jpg',
-  │     token: '$2a$10$yArlrgSfN4d84oVxweJvC.yHmoTF6sF6KKCZfff1hGiSWQbhkomlW|::|$2a$10$Vh7MDOUACkQ4jV9xlNX41.m8je0yUF
-  │ Eoi0Wx.xCN.w0YKmqrK/DKG'
+  │     token: '$2a$10$70eHE4cSBNI6L1G6LmJIBeLcpr0EWxnM.08Q184wTbJqaLEQhPT.6|::|$2a$10$egMjeP6726
+  │ 3X18Jbc2GPruyjuV5umQzEsFlCaPHPCO9RG4xbNbMXi'
   │   }
   │ }
   └
-  POST http://localhost:1667/articles/reprehenderit-pariat/favorite [200 OK, 469B, 87ms]
+  POST http://localhost:1667/articles/reprehenderit-pariat/favorite [200 OK, 469B, 265ms]
   ✓  Status code is 200
   ✓  Response time is less than 1000ms
   ✓  Check the active environment
 
-┌─────────────────────────┬────────────────────┬───────────────────┐
-│                         │           executed │            failed │
-├─────────────────────────┼────────────────────┼───────────────────┤
-│              iterations │                  1 │                 0 │
-├─────────────────────────┼────────────────────┼───────────────────┤
-│                requests │                 38 │                 0 │
-├─────────────────────────┼────────────────────┼───────────────────┤
-│            test-scripts │                 42 │                 0 │
-├─────────────────────────┼────────────────────┼───────────────────┤
-│      prerequest-scripts │                 35 │                 0 │
-├─────────────────────────┼────────────────────┼───────────────────┤
-│              assertions │                 85 │                 3 │
-├─────────────────────────┴────────────────────┴───────────────────┤
-│ total run duration: 10.3s                                        │
-├──────────────────────────────────────────────────────────────────┤
-│ total data received: 403.43kB (approx)                           │
-├──────────────────────────────────────────────────────────────────┤
-│ average response time: 231ms [min: 8ms, max: 638ms, s.d.: 258ms] │
-└──────────────────────────────────────────────────────────────────┘
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                 38 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                 42 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                 35 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                 85 │                  1 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 21.2s                                         │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 409.28kB (approx)                            │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 488ms [min: 8ms, max: 1783ms, s.d.: 582ms] │
+└───────────────────────────────────────────────────────────────────┘
 
-  #  failure                   detail                                                                                            
-                                                                                                                                 
- 1.  AssertionError            Status code is 200                                                                                
-                               expected response to have status code 200 but got 422                                             
-                               at assertion:0 in test-script                                                                     
-                               inside "Profile / Edit Profile"                                                                   
-                                                                                                                                 
- 2.  AssertionError            Test all response keys                                                                            
-                               expected { Object (errors) } in response to contain property 'user.username'                      
-                               at assertion:3 in test-script                                                                     
-                               inside "Profile / Edit Profile"                                                                   
-                                                                                                                                 
- 3.  TypeError                 Test email data                                                                                   
-                               Cannot read properties of undefined (reading 'email')                                             
-                               at assertion:4 in test-script                                                                     
-                               inside "Profile / Edit Profile"  
+  #  failure               detail                                                                            
+                                                                                                             
+ 1.  AssertionError        Response time is less than 1000ms                                                 
+                           expected 1755 to be below 1000                                                    
+                           at assertion:1 in test-script                                                     
+                           inside "Sign Up / Sign Up"  
