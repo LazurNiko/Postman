@@ -1,2 +1,1 @@
-# Postman
-HTML requests for Conduit web page
+[![Run for Conduit project](https://run.pstmn.io/button.svg)](https://god.postman.co/run-collection/17982896-70866149-8ee7-4e00-9536-91e6511c453d?action=collection%2Ffork&collection-url=entityId%3D17982896-70866149-8ee7-4e00-9536-91e6511c453d%26entityType%3Dcollection)
